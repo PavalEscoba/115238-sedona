@@ -1,7 +1,7 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павал Мятлицки](https://up.htmlacademy.ru/adaptive/6/user/115238).
-* Наставник: `Неизвестно`.
+* Наставник: `известно`.
 
 ---
 
