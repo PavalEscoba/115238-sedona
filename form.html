@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Sedona Form</title>
@@ -10,16 +10,16 @@
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__items">
 					<li class="main-nav__item main-nav_item--active">
-						<span>главная</span>
+						<a href="#" class=".main-nav__link">главная</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="#">фото и видео</a>
+						<a href="#" class="main-nav__link">фото и видео</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="#">форма отзыва</a>
+						<a href="#" class="main-nav__link">форма отзыва</a>
 					</li>
 					<li class="main-nav__item">
-						<a href="#">html academy</a>
+						<a href="#" class="main-nav__link">html academy</a>
 					</li>
 				</ul>
 			</div>
@@ -45,27 +45,24 @@
 					<br>достопримечательностях</p>
 			</div>
 			<form action="#">
-				<div class="feedback__info">
-					<fieldset>
-						<p>представьтесь пожалуста:</p>
+				
+					<fieldset class="feedback__info">
+						<legend>представьтесь пожалуста:</legend>
 						<label for="name">имя</label>
 						<input type="text" id="name" name="name" class="feedback__name">
 						<label for="second-name">фамилия</label>
 						<input type="text" id="second-name" name="surname" class="feedback__surname">
 						<label for="third-name">отчество</label>
-						<input type="text" id="third-name" name="fathers-name" class="feedback__third-name"></fieldset>
-				</div>
-				<div class="feedback__contact">
-					<fieldset>
-						<p>контактная информация:</p>
+						<input type="text" id="third-name" name="fathers-name" class="feedback__third-name">
+					</fieldset>				
+					<fieldset class="feedback__contact">
+						<legend>контактная информация:</legend>
 						<label for="number">контактный телефон</label>
-						<input type="text" id="number" name="telephone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="format X-XXX-XXX" class="feedback__telephone">
+						<input type="tel" id="number" name="telephone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" class="feedback__telephone">
 						<label for="email">электронная почта</label>
-						<input type="email" id="email" name="person-email" class="feedback__email"></fieldset>
-				</div>
-				<div class="feedback__impression">
-					<fieldset>
-						<p>ваше общее впечатление:</p>
+						<input type="email" id="email" name="person-email" placeholder="Введите e-mail" class="feedback__email"></fieldset>				
+					<fieldset class="feedback__impression">
+						<legend>ваше общее впечатление:</legend>
 						<label>
 							<input type="radio" name="impression" value="negative">скорее положительное 
 						</label>
@@ -74,14 +71,10 @@
 							<input type="radio" name="impression" value="positive">скорее отрицательное</label>
 						<label>
 							<input type="radio" name="impression" value="neutral">затрудняюсь ответить</label>
-
-					</fieldset>
-				</div>
-				<div class="feedback__showplaces">
-					<fieldset>
-						<p>
-							Посещённые
-							<br>достопримечательности</p>
+					</fieldset>				
+					<fieldset class="feedback__showplaces">
+						<legend>
+							Посещённые достопримечательности</legend>
 						<label>
 							<input type="checkbox" name="showplace-1">Мост Дьявола</label>
 
@@ -91,35 +84,32 @@
 							<input type="checkbox" name="showplace3">Гора-Колокол</label>
 						<label>
 							<input type="checkbox" name="showplace4">Красные горы</label>
-					</fieldset>
-				</div>
+					</fieldset>				
 				<div class="feedback_emotion">
-					<p>опишите свои эмоции</p>
-
-					<textarea name="emotion"  cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+					<label for="emo-description">опишите свои эмоции</label>
+					<textarea name="emotion" id="emo-description" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
 				</div>
 				<input type="submit" value="отправить отзыв"></form>
 
 		</section>
 	</main>
 	<footer class="page-footer">
-		<div class="page-footer__wrap">
-			<h2 class="page-footer__hashtag">
-				<a href="#">#visitsedona</a>
-			</h2>
+		<div class="page-footer__wrap">			
+				<a href="#" class="page-footer__hashtag">#visitsedona</a>		
 			<section class="page-footer__social">
 				<div class="social-links">
 					<a class="social-link  social-link--vk" href="#">VK</a>
 					<a class="social-link  social-link--fb" href="#">Fb</a>
 					<a class="social-link  social-link--inst" href="#">Youtube</a>
 				</div>
+			</section>
 				<div class="page-footer_copyright">
 					<p>разработано</p>
 					<a href="htmlacademy.ru">
 						<img src="#" alt="htmlacademy.ru">
 					</a>
 				</div>
-			</section>
+			
 
 		</div>
 
